@@ -71,12 +71,12 @@ const closeModal = () => {
 }
 
 // delet Item
-var deletItem = inputUrl => {
+var deletItem = (inputUrl, inputName) => {
     var deleteItemConfirm = confirm("Are Sure To Delete?")
 
     if (deleteItemConfirm) {
         bookMarks.forEach((bookmark, index) => {
-            if (bookmark.url == inputUrl) {
+            if (bookmark.url == inputUrl && bookmark.name == inputName) {
                 bookMarks.splice(index, 1)
             }
         })
@@ -112,7 +112,7 @@ var bildBookMark = () => {
         deleteBtn.setAttribute("class", "bi bi-x delete_btn")
         deleteBtn.setAttribute("title", "Delet Book")
         deleteBtn.addEventListener("click", () => {
-            deletItem(url)
+            deletItem(url, name)
         })
 
         // link Info

@@ -11124,6 +11124,7 @@ textarea.form-control-lg {
 body {
   min-height: 100vh;
   background: url(../../images/library.jpg) center no-repeat;
+  background-size: cover;
 }
 body::after {
   content: "";
@@ -11164,7 +11165,7 @@ h1:hover, .h1:hover {
   transform: translate(-50%, -50%);
   animation: 0.5s drop;
 }
-.add_book_modal input {
+.add_book_modal .add_book_field {
   width: 400px;
   transition: all 0.2s;
   outline: none;
@@ -11205,7 +11206,7 @@ h1:hover, .h1:hover {
 }
 .books .item {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   border-radius: 5px;
 }
@@ -11228,6 +11229,12 @@ h1:hover, .h1:hover {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  .add_book_modal .add_book_field {
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

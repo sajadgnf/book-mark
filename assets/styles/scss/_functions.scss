@@ -1,0 +1,7 @@
+@mixin media ($size) {
+    @if($size == M) {
+        @media (max-width: 490px) {
+            @content
+        }
+    }
+}

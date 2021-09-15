@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+    <title>Book Mark</title>
+</head>
+
+<body>
+    <section class="p-5 d-flex align-items-center flex-column">
+        <h1 id="add_book" class="px-5 py-3 rounded-3 shadow">bookMark</h1>
+        
+        <!-- Add Book Modal -->
+        <div class="modal">
+            <div class="add_book_modal position-absolute bg-white px-5 py-3">
+                <h3 class="lead text-center mb-3">Add Bookmark</h3>
+
+                <form action="#">
+                    <label class="label" for="name" class="mb-1">The Book Name</label>
+                    <input id="name" type="text" class="add_book_field py-1 bg-light">
+                    <div class="under_line"></div>
+                    <p class="error mb-3 text-danger"></p>
+
+                    <label class="label" for="url" class="mb-1">url</label>
+                    <input id="url" type="text" class="add_book_field py-1 bg-light">
+                    <div class="under_line"></div>
+                    <p class="error mb-3 text-danger"></p>
+
+                    <button id="save_btn" class="btn btn-primary text-white">save</button>
+                    <button id="cancle_btn" class="btn btn-primary text-white">cancle</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Added Books List -->
+        <div class="books row g-4 mt-5"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -70,7 +70,7 @@ const closeModal = () => {
     clear()
 }
 
-// delet Item
+// Delete Item
 var deletItem = (inputUrl, inputName) => {
     var deleteItemConfirm = confirm("Are Sure To Delete?")
 
@@ -82,12 +82,10 @@ var deletItem = (inputUrl, inputName) => {
         })
         localStorage.setItem("bookMarks", JSON.stringify(bookMarks))
         fetchBookMark()
-
     }
-
 }
 
-// BildMarkBook
+// Bild MarkBook
 var bildBookMark = () => {
     books.innerHTML = ""
 
